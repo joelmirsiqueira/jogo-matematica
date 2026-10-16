@@ -66,7 +66,7 @@ function ativarBtsNivel() {
     const jogadores = document.getElementById('jogadores');
     Array.from(opcoes).forEach(opcao => {
         opcao.addEventListener('click', () => {
-            sessionStorage.setItem('nivel', opcao.textContent);
+            sessionStorage.setItem('nivel', opcao.textContent.split(':')[0]);
             nivel.style.display = 'none';
             jogadores.style.display = 'flex';
         });

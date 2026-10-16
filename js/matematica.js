@@ -10,7 +10,7 @@ let listaGeradores = [];
 let jogadorAtual;
 let questaoAtual;
 let contadorId;
-const duracao = 30;
+const duracao = 60;
 
 
 window.addEventListener('load', main)
@@ -29,7 +29,7 @@ function criarJogadores() {
         const jogador = {
             nome: nome,
             pontos: 0,
-            vidas: 3
+            vidas: 5
         }
         listaJogadores.push(jogador);
     })
